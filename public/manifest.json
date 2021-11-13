@@ -1,0 +1,38 @@
+{
+  "name": "Wartek",
+  "short_name": "Pokédex",
+  "icons": [
+    {
+      "src": "https://res.cloudinary.com/krinawibisana/image/upload/v1636743434/icon-512_oo6l8p_qomulp.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "https://res.cloudinary.com/krinawibisana/image/upload/v1636743434/icon-192_ktgoh5_xehl8t.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://res.cloudinary.com/krinawibisana/image/upload/v1636741971/pokeball-icon_stgm3g_awtt3z.svg",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://res.cloudinary.com/krinawibisana/image/upload/v1636741970/icon-32_tkzgni_itg35e.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "https://res.cloudinary.com/krinawibisana/image/upload/v1636741970/icon-16_xjyuto_sygwod.png",
+      "type": "image/png",
+      "sizes": "16x16"
+    }
+  ],
+  "theme_color": "#000",
+  "background_color": "#FFFFFF",
+  "description": "https://res.cloudinary.com/krinawibisana/image/upload/v1636743434/icon-192_ktgoh5_xehl8t.png",
+  "display": "fullscreen",
+  "start_url": "/",
+  "orientation": "portrait"
+}

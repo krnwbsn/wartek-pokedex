@@ -21,3 +21,5 @@ export const PokemonTypeColor = [
 
 export const pokemonVersion = process.env.NEXT_PUBLIC_POKEMON_VERSION;
 export const pokeImageBaseUrl = process.env.NEXT_PUBLIC_POKE_IMAGE_BASE_URL;
+export const defaultPageTitle = 'Wartek';
+export const defaultMetaDescription = 'Wartek Pokedex App';
