@@ -11,8 +11,6 @@ import {
   getPokemonTypeColor,
   formattedName,
 } from '@utils/formatter';
-import Loader from 'react-loader-spinner';
-import * as Styled from './styles';
 import type { IParams } from '@interfaces/iparams';
 
 const Home: NextPage = () => {
@@ -68,7 +66,7 @@ const Home: NextPage = () => {
         <title key="page-title">{defaultPageTitle}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <Layout>
+      <Layout loading={loading}>
         <>
           {dataSource?.map(({ id, pokemonId, name, color, types }: any) => (
             <Card
@@ -80,16 +78,6 @@ const Home: NextPage = () => {
               key={`${id}-${name}`}
             />
           ))}
-          {loading && (
-            <Styled.LoadingContainer>
-              <Loader
-                type="ThreeDots"
-                color="#ffcb05"
-                height={200}
-                width={200}
-              />
-            </Styled.LoadingContainer>
-          )}
         </>
       </Layout>
     </>
