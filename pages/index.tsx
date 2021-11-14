@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { NextPage } from 'next';
 import { defaultPageTitle } from '@utils/constant';
 import Layout from '@components/Layout';
+import Card from '@components/Card';
 
 const Home: NextPage = () => {
   return (
@@ -11,7 +12,10 @@ const Home: NextPage = () => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Layout>
-        <p>test</p>
+        <Card color="#fff111" />
+        <Card color="#fff111" />
+        <Card color="#fff111" />
+        <Card color="#fff111" />
       </Layout>
     </>
   );

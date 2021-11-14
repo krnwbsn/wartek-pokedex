@@ -1,7 +1,10 @@
 import React from 'react';
-import { ILayout } from '@interfaces/ilayout';
 import Images from 'next/image';
 import * as Styled from './styles';
+
+export interface ILayout {
+  children: JSX.Element[];
+}
 
 const Component = ({ children }: ILayout) => (
   <Styled.Container>

@@ -10,6 +10,7 @@ module.exports = withPWA({
     sw: 'service-worker.js',
     disable: isProduction ? false : true,
   },
+  optimizeFonts: false,
   images: {
     domains: ['raw.githubusercontent.com', 'res.cloudinary.com'],
   },

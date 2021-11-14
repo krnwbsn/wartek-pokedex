@@ -17,4 +17,6 @@ export const Header = styled.div`
 export const Content = styled.div`
   margin-top: 60px;
   padding: 16px;
+  align-items: center;
+  text-align:center;
 `;
