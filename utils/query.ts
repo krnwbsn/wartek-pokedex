@@ -43,36 +43,6 @@ export const GET_POKEMON = gql`
       ) {
         flavor_text
       }
-      evolutions: pokemon_v2_evolutionchain {
-        species: pokemon_v2_pokemonspecies(order_by: { order: asc }) {
-          id
-          name
-          evolves_from_species_id
-          evolutions: pokemon_v2_pokemonevolutions {
-            min_level
-            min_affection
-            min_beauty
-            min_happiness
-            gender_id
-            time_of_day
-            move: pokemon_v2_move {
-              name
-            }
-            by_held_item: pokemonV2ItemByHeldItemId {
-              name
-            }
-            item: pokemon_v2_item {
-              name
-            }
-            evolution_trigger: pokemon_v2_evolutiontrigger {
-              name
-            }
-            location: pokemon_v2_location {
-              name
-            }
-          }
-        }
-      }
       egg_groups: pokemon_v2_pokemonegggroups {
         group: pokemon_v2_egggroup {
           name
@@ -99,11 +69,6 @@ export const GET_POKEMON = gql`
             name
           }
         }
-      }
-    }
-    species_aggregate: pokemon_v2_pokemonspecies_aggregate {
-      aggregate {
-        count
       }
     }
   }

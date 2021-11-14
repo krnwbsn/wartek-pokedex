@@ -1,0 +1,120 @@
+{
+  "__typename": "pokemon_v2_pokemonspecies",
+  "id": 1,
+  "gender_rate": 1,
+  "hatch_counter": 20,
+  "name": "bulbasaur",
+  "description": [
+    {
+      "__typename": "pokemon_v2_pokemonspeciesflavortext",
+      "flavor_text": "A strange seed was\nplanted on its\nback at birth.\fThe plant sprouts\nand grows with\nthis POKéMON."
+    }
+  ],
+  "egg_groups": [
+    {
+      "__typename": "pokemon_v2_pokemonegggroup",
+      "group": {
+        "__typename": "pokemon_v2_egggroup",
+        "name": "monster"
+      }
+    },
+    {
+      "__typename": "pokemon_v2_pokemonegggroup",
+      "group": {
+        "__typename": "pokemon_v2_egggroup",
+        "name": "plant"
+      }
+    }
+  ],
+  "pokemons": [
+    {
+      "__typename": "pokemon_v2_pokemon",
+      "id": 1,
+      "name": "bulbasaur",
+      "height": 7,
+      "weight": 69,
+      "types": [
+        {
+          "__typename": "pokemon_v2_pokemontype",
+          "type": {
+            "__typename": "pokemon_v2_type",
+            "name": "grass"
+          }
+        },
+        {
+          "__typename": "pokemon_v2_pokemontype",
+          "type": {
+            "__typename": "pokemon_v2_type",
+            "name": "poison"
+          }
+        }
+      ],
+      "abilities": [
+        {
+          "__typename": "pokemon_v2_pokemonability",
+          "ability": {
+            "__typename": "pokemon_v2_ability",
+            "name": "chlorophyll"
+          }
+        },
+        {
+          "__typename": "pokemon_v2_pokemonability",
+          "ability": {
+            "__typename": "pokemon_v2_ability",
+            "name": "overgrow"
+          }
+        }
+      ],
+      "stats": [
+        {
+          "__typename": "pokemon_v2_pokemonstat",
+          "base_stat": 45,
+          "stat": {
+            "__typename": "pokemon_v2_stat",
+            "name": "hp"
+          }
+        },
+        {
+          "__typename": "pokemon_v2_pokemonstat",
+          "base_stat": 49,
+          "stat": {
+            "__typename": "pokemon_v2_stat",
+            "name": "attack"
+          }
+        },
+        {
+          "__typename": "pokemon_v2_pokemonstat",
+          "base_stat": 49,
+          "stat": {
+            "__typename": "pokemon_v2_stat",
+            "name": "defense"
+          }
+        },
+        {
+          "__typename": "pokemon_v2_pokemonstat",
+          "base_stat": 65,
+          "stat": {
+            "__typename": "pokemon_v2_stat",
+            "name": "special-attack"
+          }
+        },
+        {
+          "__typename": "pokemon_v2_pokemonstat",
+          "base_stat": 65,
+          "stat": {
+            "__typename": "pokemon_v2_stat",
+            "name": "special-defense"
+          }
+        },
+        {
+          "__typename": "pokemon_v2_pokemonstat",
+          "base_stat": 45,
+          "stat": {
+            "__typename": "pokemon_v2_stat",
+            "name": "speed"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,3 +1,4 @@
 export interface IParams {
-  limit: number;
+  limit?: number;
+  name?: string;
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import Images from 'next/image';
 import * as Styled from './styles';
 import { useRouter } from 'next/router';
+import Badge from '@components/Badge';
 
 interface ICard {
   color: string;
@@ -29,13 +30,7 @@ const Component = ({ color, name, pokemonId, id, types }: ICard) => {
       <Styled.Content>
         <Styled.PokemonId>{pokemonId}</Styled.PokemonId>
         <Styled.PokemonName>{name}</Styled.PokemonName>
-        <Styled.BadgesContainer>
-          {types.map(({ color, type }: any, index: number) => (
-            <Styled.TypeBadge color={color} key={`${type}-${color}-4{index}`}>
-              {type}
-            </Styled.TypeBadge>
-          ))}
-        </Styled.BadgesContainer>
+        <Badge types={types} />
       </Styled.Content>
     </Styled.Container>
   );

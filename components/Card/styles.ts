@@ -1,10 +1,7 @@
 import styled from 'styled-components';
+import type { IStyleProps } from '@interfaces/istyleprops';
 
-interface ICardStyle {
-  color: string;
-}
-
-export const Container = styled.div<ICardStyle>`
+export const Container = styled.div<IStyleProps>`
   width: 200px;
   height: 100%;
   background-color: ${({ color }) => (color ? color : '#fff')}80;
