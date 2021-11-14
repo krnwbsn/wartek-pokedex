@@ -34,6 +34,9 @@
       ],
       "@styles/*": [
         "./styles/*"
+      ],
+      "@containers/*": [
+        "./containers/*"
       ]
     },
     "incremental": true

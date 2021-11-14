@@ -20,6 +20,7 @@ module.exports = withPWA({
     config.resolve.alias['@utils'] = path.join(__dirname, 'utils');
     config.resolve.alias['@interfaces'] = path.join(__dirname, 'interfaces');
     config.resolve.alias['@styles'] = path.join(__dirname, 'styles');
+    config.resolve.alias['@containers'] = path.join(__dirname, 'containers');
 
     return config;
   },

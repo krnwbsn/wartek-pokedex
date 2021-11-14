@@ -12,6 +12,7 @@ export const Container = styled.div<ICardStyle>`
   margin: 8px;
   border-radius: 8px;
   display: inline-block;
+  cursor: pointer;
 `;
 
 export const Content = styled.div`
