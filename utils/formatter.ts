@@ -6,7 +6,7 @@ export const getFormattedId = (id: number) => {
 
 export const getPokemonTypeColor = (pokemonType: string[]) => {
   if (pokemonType) {
-    const typeColor = pokemonTypeColor.filter(({ type }: any) =>
+    const typeColor = pokemonTypeColor.filter(({ type }) =>
       pokemonType.includes(type)
     );
 

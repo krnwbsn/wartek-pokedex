@@ -1,10 +1,16 @@
 import React from 'react';
 import * as Styled from './styles';
 
-const ProgressBar = ({ completed }: any) => {
+interface IProgressBar {
+  completed: number;
+}
+
+const ProgressBar = ({ completed }: IProgressBar) => {
+  const abilityValue = completed / 3;
+
   return (
     <Styled.Container>
-      <Styled.Filter completed={completed}>
+      <Styled.Filter completed={abilityValue}>
         <Styled.Label>{completed}%</Styled.Label>
       </Styled.Filter>
     </Styled.Container>

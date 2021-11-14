@@ -4,10 +4,11 @@ import type { IStyleProps } from '@interfaces/istyleprops';
 export const Container = styled.div<IStyleProps>`
   width: 480px;
   position: relative;
-  margin: 0 auto;
+  margin: 24px auto;
   text-align: left;
   background-color: ${({ color }) => (color ? color : '#fff')}80;
   padding: 16px;
+  border-radius: 16px;
 
   @media only screen and (max-width: 479px) {
     width: 90%;
@@ -34,12 +35,11 @@ export const ImageContainer = styled.div`
   display: flex;
   justify-content: center;
   padding: 24px;
-  width: 100%;
 `;
 
 export const PokemonDescription = styled.div`
   padding: 16px;
-  border-radius: 8px;
+  border-radius: 16px;
   background-color: #fff;
 `;
 

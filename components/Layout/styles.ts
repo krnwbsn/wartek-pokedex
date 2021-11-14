@@ -10,14 +10,16 @@ export const Header = styled.div`
   background-color: #fff;
   position: fixed;
   top: 0;
-  width: 100%;
+  left: 0;
+  right: 0;
   background-color: white;
   z-index: 9;
   cursor: pointer;
+  padding: 16px;
 `;
 
 export const Content = styled.div`
-  margin-top: 60px;
+  margin-top: 80px;
   padding: 16px;
   align-items: center;
   text-align: center;

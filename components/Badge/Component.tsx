@@ -1,11 +1,19 @@
 import React from 'react';
 import * as Styled from './styles';
+import type { IType } from '@interfaces/itype';
 
-const Badge = ({ types }: any) => (
+interface IBadge {
+  types: IType[];
+}
+
+const Badge = ({ types }: IBadge) => (
   <Styled.BadgesContainer>
-    {types.map(({ color, type }: any, index: number) => (
-      <Styled.TypeBadge color={color} key={`${type}-${color}-${index}`}>
-        {type}
+    {types.map((item: IType, index: number) => (
+      <Styled.TypeBadge
+        color={item.color}
+        key={`${item.type}-${item.color}-${index}`}
+      >
+        {item.type}
       </Styled.TypeBadge>
     ))}
   </Styled.BadgesContainer>
