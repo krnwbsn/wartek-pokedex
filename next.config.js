@@ -1,14 +1,11 @@
 const path = require('path');
 const withPWA = require('next-pwa');
 
-const isProduction = process.env.NODE_ENV === 'production';
-
 module.exports = withPWA({
   pwa: {
     dest: 'public',
     register: true,
     sw: 'service-worker.js',
-    disable: isProduction ? false : true,
   },
   optimizeFonts: false,
   images: {
