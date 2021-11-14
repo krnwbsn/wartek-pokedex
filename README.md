@@ -3,7 +3,7 @@
 This is a pokédex mobile first build using NextJs.
 ## Application
 
-This application was deployed on vercel, check it out: [Pokédex by Krina Wibisana]()
+This application was deployed on vercel, check it out: [Pokédex by Krina Wibisana](https://wartek-pokedex-dmdvomspg-krina-wibisana.vercel.app/)
 
 ## API
 
