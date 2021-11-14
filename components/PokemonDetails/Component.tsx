@@ -3,7 +3,7 @@ import Images from 'next/image';
 import * as Styled from './styles';
 import { menus } from '@utils/constant';
 import ProgressBar from '@components/ProgressBar';
-import { useRouter } from 'next/router';
+import Router from 'next/router';
 import Badge from '@components/Badge';
 import type { IType } from '@interfaces/itype';
 import type { IKeyValue } from '@interfaces/ikeyvalue';
@@ -35,7 +35,6 @@ const PokemonDetails = ({
   stats,
   abilities,
 }: IPokemonDetails) => {
-  const Router = useRouter();
   const [menu, setMenu] = useState(menus[0].key);
 
   return (

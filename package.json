@@ -5,16 +5,21 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest --coverage",
+    "test-reset": "find . -name '*.snap' -delete"
   },
   "dependencies": {
     "@apollo/client": "^3.4.17",
+    "@testing-library/react": "^12.1.2",
     "apollo-cache-inmemory": "^1.6.6",
     "apollo-cache-persist": "^0.1.1",
     "apollo-client": "^2.6.10",
     "apollo-link-http": "^1.5.17",
     "dotenv": "^10.0.0",
+    "enzyme": "^3.11.0",
     "graphql": "^16.0.1",
+    "jest": "^27.3.1",
     "next": "12.0.3",
     "next-pwa": "^5.4.0",
     "react": "17.0.2",
@@ -23,13 +28,16 @@
     "styled-components": "^5.3.3"
   },
   "devDependencies": {
+    "@types/jest": "^27.0.2",
     "@types/node": "16.11.7",
     "@types/react": "17.0.34",
     "@types/styled-components": "^5.1.15",
     "@typescript-eslint/eslint-plugin": "^5.3.1",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.5",
     "babel-plugin-styled-components": "^1.13.3",
     "eslint": "7",
     "eslint-config-next": "12.0.3",
+    "eslint-plugin-prettier": "^4.0.0",
     "typescript": "4.4.4"
   }
 }
